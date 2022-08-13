@@ -30,7 +30,7 @@ Install NGINX and add the following modules to your installation:
 Replace every occurrence of **wordpress.sample** in
 [nginx/sites/wordpress.conf](nginx/sites/wordpress.conf) with **yourdomain.com**
 
-Generate DH Parameters:
+Generating DH parameters:
 
 ```bash
 mkdir -p /etc/nginx/ssl/
@@ -38,7 +38,7 @@ cd /etc/nginx/ssl/
 sudo openssl dhparam -out /etc/nginx/ssl/dhparam.pem 4096
 ```
 
-Issue your certificates:
+Issuing certificates:
 
 ```bash
 sudo apt install certbot -y
