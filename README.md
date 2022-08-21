@@ -120,7 +120,3 @@ wp plugin activate wp-super-cache
 
 ![SSL Labs test](summary-ssl.png) ![PageSpeed report](summary-pagespeed-1.png)
 ![PageSpeed report](summary-pagespeed-2.png)
-
-## License
-
-[Hippocratic License](LICENSE)
