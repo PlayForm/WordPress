@@ -68,7 +68,7 @@ Install [Bedrock](https://roots.io/bedrock/) in the
 **/usr/share/nginx/sites/wordpress/** directory and add the required WordPress
 plugins:
 
-```
+```sh
 composer require roots/soil
 composer require wpackagist-plugin/wordpress-seo
 composer require wpackagist-plugin/wp-optimize
