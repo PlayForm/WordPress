@@ -22,10 +22,10 @@ and NGINX.
 
 Install NGINX and add the following modules to your installation:
 
--   https://github.com/openresty/headers-more-nginx-module
--   https://github.com/google/ngx_brotli
--   https://github.com/vision5/ngx_devel_kit
--   https://github.com/openresty/set-misc-nginx-module
+-   HTTPS://GitHub.Com/openresty/headers-more-nginx-module
+-   HTTPS://GitHub.Com/google/ngx_brotli
+-   HTTPS://GitHub.Com/vision5/ngx_devel_kit
+-   HTTPS://GitHub.Com/openresty/set-misc-nginx-module
 
 Replace every occurrence of **wordpress.sample** in
 [nginx/sites/wordpress.conf](nginx/sites/wordpress.conf) with **yourdomain.com**
@@ -99,11 +99,11 @@ Setup [WP CLI](https://wp-cli.org/) and install WordPress:
 alias wp='wp --allow-root'
 
 wp core install \
-	--title="WordPress Sample" \
-	--admin_user="admin" \
-	--admin_password="admin" \
-	--admin_email="admin@playform.cloud" \
-	--url="https://wordpress.sample" \
+	--title="Sample" \
+	--admin_user="Administrator" \
+	--admin_password="Administrator" \
+	--admin_email="Administrator@Playform.Cloud" \
+	--url="https://WordPress.Sample" \
 	--skip-email
 
 # Update permalink structure.
