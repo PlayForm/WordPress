@@ -32,7 +32,7 @@ Replace every occurrence of **wordpress.sample** in
 
 Generating DH parameters:
 
-```bash
+```sh
 mkdir -p /etc/nginx/ssl/
 cd /etc/nginx/ssl/
 sudo openssl dhparam -out /etc/nginx/ssl/dhparam.pem 4096
@@ -40,7 +40,7 @@ sudo openssl dhparam -out /etc/nginx/ssl/dhparam.pem 4096
 
 Issuing certificates:
 
-```bash
+```sh
 sudo apt install certbot -y
 certbot certonly -d yourdomain.com --standalone
 certbot certonly -d www.yourdomain.com --standalone
@@ -52,13 +52,13 @@ Install PHP 7.4 and [Composer](https://getcomposer.org/).
 
 Create the session folder for PHP-FPM:
 
-```bash
+```sh
 mkdir -p /usr/share/nginx/sites/wordpress/tmp/session
 ```
 
 Create a new user for the WordPress installation:
 
-```bash
+```sh
 adduser --no-create-home --disabled-login --disabled-password wordpress
 ```
 
@@ -87,7 +87,7 @@ Config::define("WPCACHEHOME", $root_dir . "/web/app/plugins/wp-super-cache/");
 
 to your **config/application.php** file and WP_CACHE your to **.env** file:
 
-```bash
+```sh
 WP_CACHE=true
 ```
 
@@ -95,7 +95,7 @@ WP_CACHE=true
 
 Setup [WP CLI](https://wp-cli.org/) and install WordPress:
 
-```bash
+```sh
 alias wp='wp --allow-root'
 
 wp core install \
