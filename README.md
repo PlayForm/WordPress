@@ -28,7 +28,7 @@ Install NGINX and add the following modules to your installation:
 -   https://github.com/openresty/set-misc-nginx-module
 
 Replace every occurrence of **wordpress.sample** in
-[nginx/sites/wordpress.conf](nginx/sites/wordpress.conf) with **yourdomain.com**
+[`nginx/sites/wordpress.conf`](nginx/sites/wordpress.conf) with **yourdomain.com**
 
 Generating DH parameters:
 
@@ -48,7 +48,7 @@ certbot certonly -d www.yourdomain.com --standalone
 
 ## PHP
 
-Install PHP 7.4 and [Composer](https://getcomposer.org/).
+Install PHP 7.4 and [`Composer`](https://getcomposer.org/).
 
 Create the session folder for PHP-FPM:
 
@@ -64,7 +64,7 @@ adduser --no-create-home --disabled-login --disabled-password wordpress
 
 ## WordPress
 
-Install [Bedrock](https://roots.io/bedrock/) in the
+Install [`Bedrock`](https://roots.io/bedrock/) in the
 **/usr/share/nginx/sites/wordpress/** directory and add the required WordPress
 plugins:
 
@@ -93,7 +93,7 @@ WP_CACHE=true
 
 ### WP CLI
 
-Setup [WP CLI](https://wp-cli.org/) and install WordPress:
+Setup [`WP CLI`](https://wp-cli.org/) and install WordPress:
 
 ```sh
 alias wp='wp --allow-root'
@@ -118,5 +118,5 @@ wp plugin activate wp-super-cache
 
 # Result
 
-![SSL Labs test](summary-ssl.png) ![PageSpeed report](summary-pagespeed-1.png)
-![PageSpeed report](summary-pagespeed-2.png)
+![`SSL Labs test](summary-ssl.png) ![PageSpeed report`](summary-pagespeed-1.png)
+![`PageSpeed report`](summary-pagespeed-2.png)
