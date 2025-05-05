@@ -102,7 +102,7 @@ wp core install \
 	--title="Sample" \
 	--admin_user="Administrator" \
 	--admin_password="Administrator" \
-	--admin_email="Administrator@PlayForm.LTD" \
+	--admin_email="Administrator@PlayForm.Cloud" \
 	--url="HTTPS://WordPress.Sample" \
 	--skip-email
 
